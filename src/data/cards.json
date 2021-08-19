@@ -1,0 +1,26 @@
+[
+    {
+        "img": "../assets/images/jpg-1.png",
+        "alt": "O nas",
+        "name": " ",
+        "button": "Poznaj nas!"
+    },
+    {
+        "img": "../assets/images/jpg-2.png",
+        "alt": "Diagnostyka",
+        "name": " ",
+        "button": "Umów się"
+    },
+    {
+        "img": "../assets/images/jpg-3.png",
+        "alt": "Trening",
+        "name": " ",
+        "button": "Wybierz Trening"
+    },
+    {
+        "img": "../assets/images/jpg-4.png",
+        "alt": "Kontakt",
+        "name": " ",
+        "button": "Kontakt"
+    }
+]
