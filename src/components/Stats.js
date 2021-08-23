@@ -16,7 +16,7 @@ export default Stats
 
 const StatsContainer = styled.div`
     width: 100%;
-    background:#0029F5;
+    background:black;
     color:white;
     display:flex;
     flex-direction:column;

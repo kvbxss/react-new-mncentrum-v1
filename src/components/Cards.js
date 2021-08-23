@@ -46,6 +46,7 @@ const Cards = ({ heading }) => {
               css={`
               position:absolute;
               bottom:10px;
+              size: 60%;
               `}
             >
               {item.node.button}
@@ -70,7 +71,7 @@ export default Cards
 const ProductsContainer = styled.div`
   min-height: 100vh;
   padding: 5rem calc((100vw - 1300px) / 2);
-  background: #00147A;
+  background: black;
   color: #fff;
 `
 const ProductsHeading = styled.div`

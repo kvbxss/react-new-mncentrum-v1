@@ -5,7 +5,7 @@ import { FaBars } from "react-icons/fa"
 import { menuData } from "../data/MenuData"
 import { Button } from "./Button"
 
-const Header = () => {
+const Header = ({ toggle }) => {
   return (
     <Nav>
       <NavLink to="/"><img
@@ -13,7 +13,9 @@ const Header = () => {
               alt="logo"
               width={125}
             /></NavLink>
-      <Bars />
+      <MobileIcon onClick={toggle}>
+            <Bars />
+          </MobileIcon>
       <NavMenu>
         {menuData.map((item, index) => (
           <NavLink to={item.link} key={index}>
@@ -22,7 +24,7 @@ const Header = () => {
         ))}
       </NavMenu>
       <NavBtn>
-        <Button primary="true" round="true" to="/account">Zaloguj</Button>
+        <Button primary="true" round="true" to="/signin">Zaloguj</Button>
       </NavBtn>
     </Nav>
   )
@@ -55,6 +57,20 @@ const NavLink = styled(Link)`
   }
  
 `
+export const MobileIcon = styled.div`
+  display: none;
+
+  @media screen and (max-width: 768px) {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #fff;
+  }
+`;
 
 const Bars = styled(FaBars)`
   display: none;
